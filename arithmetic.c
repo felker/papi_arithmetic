@@ -18,12 +18,12 @@ int main() {
   /* double c; */
 
   ret = PAPI_hl_region_begin("divide");
-  if ( ret != PAPI_OK )
-    handle_error(ret);  
+  /* if ( ret != PAPI_OK ) */
+  /*   handle_error(ret);   */
   c = a/b;
   ret = PAPI_hl_region_end("divide");
-  if ( ret != PAPI_OK )
-    handle_error(ret);
+  /* if ( ret != PAPI_OK ) */
+  /*   handle_error(ret); */
   printf("c = %lf\n", c);
   
   ret = PAPI_hl_region_begin("multiply");
